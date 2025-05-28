@@ -59,35 +59,44 @@
                         <span class="text-emerald-600 font-bold text-xl">FreshVibe Cleaning</span>
                     </div>
                 </div>
-                <div id="desktop-menu" class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-emerald-600 font-medium">Home</a>
-                    <a href="#services" class="text-gray-600 hover:text-emerald-600 transition">Services</a>
-                    <a href="#about" class="text-gray-600 hover:text-emerald-600 transition">About</a>
-                    <a href="#products" class="text-gray-600 hover:text-emerald-600 transition">Products</a>
-                    <a href="#testimonials" class="text-gray-600 hover:text-emerald-600 transition">Testimonials</a>
-                    <a href="#contact" class="bg-emerald-500 text-white px-4 py-2 rounded-full hover:bg-emerald-600 transition">Book Now</a>
+                <div id="desktop-menu" class="hidden md:flex items-center space-x-8" role="navigation" aria-label="Main navigation">
+                    <a href="#home" class="text-emerald-600 font-medium" aria-label="Go to homepage">Home</a>
+                    <a href="#services" class="text-gray-600 hover:text-emerald-600 transition" aria-label="View our services">Services</a>
+                    <a href="#about" class="text-gray-600 hover:text-emerald-600 transition" aria-label="Learn about us">About</a>
+                    <a href="#products" class="text-gray-600 hover:text-emerald-600 transition" aria-label="View our products">Products</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-emerald-600 transition" aria-label="Read customer testimonials">Testimonials</a>
+                    <a href="#contact" class="bg-emerald-500 text-white px-4 py-2 rounded-full hover:bg-emerald-600 transition" aria-label="Book our services">Book Now</a>
                 </div>
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
+                    <button id="mobile-menu-button"
+                            class="text-gray-600 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                            aria-label="Open mobile menu"
+                            aria-expanded="false"
+                            aria-controls="mobile-menu">
+                        <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
                     </button>
                 </div>
                 <!-- Mobile Menu -->
-                <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-gray-800 bg-opacity-95 z-50">
+                <div id="mobile-menu"
+                     class="hidden md:hidden fixed inset-0 bg-gray-800 bg-opacity-95 z-50"
+                     role="navigation"
+                     aria-label="Mobile navigation">
                     <div class="flex flex-col h-full">
                         <div class="flex justify-end p-4">
-                            <button id="mobile-menu-close" class="text-white focus:outline-none">
-                                <i class="fas fa-times text-2xl"></i>
+                            <button id="mobile-menu-close"
+                                    class="text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                                    aria-label="Close mobile menu">
+                                <i class="fas fa-times text-2xl" aria-hidden="true"></i>
                             </button>
                         </div>
                         <div class="flex flex-col items-center space-y-8 p-8">
-                            <a href="#home" class="text-white text-xl font-medium">Home</a>
-                            <a href="#services" class="text-white text-xl font-medium">Services</a>
-                            <a href="#about" class="text-white text-xl font-medium">About</a>
-                            <a href="#products" class="text-white text-xl font-medium">Products</a>
-                            <a href="#testimonials" class="text-white text-xl font-medium">Testimonials</a>
-                            <a href="#contact" class="bg-emerald-500 text-white px-6 py-2 rounded-full text-xl">Book Now</a>
+                            <a href="#home" class="text-white text-xl font-medium" aria-label="Go to homepage">Home</a>
+                            <a href="#services" class="text-white text-xl font-medium" aria-label="View our services">Services</a>
+                            <a href="#about" class="text-white text-xl font-medium" aria-label="Learn about us">About</a>
+                            <a href="#products" class="text-white text-xl font-medium" aria-label="View our products">Products</a>
+                            <a href="#testimonials" class="text-white text-xl font-medium" aria-label="Read customer testimonials">Testimonials</a>
+                            <a href="#contact" class="bg-emerald-500 text-white px-6 py-2 rounded-full text-xl" aria-label="Book our services">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -515,7 +524,8 @@
                         <a href="https://forms.fillout.com/t/8Xh5SbEMa2us"
                            class="inline-block w-full bg-emerald-500 text-white py-4 rounded-lg font-medium hover:bg-emerald-600 transition duration-300"
                            target="_blank"
-                           rel="noopener noreferrer">
+                           rel="noopener noreferrer nofollow"
+                           aria-label="Open service inquiry form (opens in new tab)">
                             Submit Inquiry
                             <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -547,11 +557,11 @@
                 <div>
                     <h3 class="text-lg font-bold mb-4">Services</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Residential Cleaning</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Commercial Cleaning</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Eco-Friendly Cleaning</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Move In/Out Cleaning</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Recurring Cleaning</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition" aria-label="Learn about our residential cleaning services">Residential Cleaning</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition" aria-label="Learn about our commercial cleaning services">Commercial Cleaning</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition" aria-label="Learn about our eco-friendly cleaning approach">Eco-Friendly Cleaning</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition" aria-label="Learn about our move in/out cleaning services">Move In/Out Cleaning</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition" aria-label="Learn about our recurring cleaning options">Recurring Cleaning</a></li>
                     </ul>
                 </div>
                 <div>
@@ -603,7 +613,7 @@
         "latitude": 42.9849,
         "longitude": -81.2453
       },
-      "url": "https://freshvibecleaning.com",
+      "url": window.location.origin,
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
@@ -629,8 +639,10 @@
         const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
 
         function toggleMobileMenu() {
+            const isOpen = !mobileMenu.classList.contains('hidden');
             mobileMenu.classList.toggle('hidden');
             document.body.classList.toggle('overflow-hidden');
+            mobileMenuButton.setAttribute('aria-expanded', (!isOpen).toString());
         }
 
         mobileMenuButton.addEventListener('click', toggleMobileMenu);
